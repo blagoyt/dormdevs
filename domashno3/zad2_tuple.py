@@ -7,6 +7,11 @@ for _ in range(n):
     if name not in students_grades:
         students_grades[name] = []
     students_grades[name].append(data)
+     if grade > 6:
+        print("Invalid grade")
+    if grade < 2:
+        print("Invalid ")
+        continue
 
 for student, datas in sorted(students_grades.items()):
     average_grade = sum(datas) / len(datas)
